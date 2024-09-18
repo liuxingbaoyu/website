@@ -1,19 +1,20 @@
-import algoliasearch from "algoliasearch/lite";
-import { css } from "@emotion/css";
-import React, { type ChangeEvent } from "react";
-import {
+'import algoliasearch from "algoliasearch/lite";
+'import { css } from "@emotion/css";
+'import React, { type ChangeEvent } from "react";
+"import {
   Configure,
   Hits,
   InstantSearch,
   Pagination,
   PoweredBy,
 } from "react-instantsearch-dom";
-import SearchBox from "./ExternalPluginsSearchBox";
-import Modal from "./Modal";
-import { colors, media } from "./styles";
-import type { BabelPlugin } from "./types";
+'import SearchBox from "./ExternalPluginsSearchBox";
+'import Modal from "./Modal";
+'import { colors, media } from "./styles";
+'import type { BabelPlugin } from "./types";
 
-const searchClient = algoliasearch(
+'const 
+  searchClient = algoliasearch(
   "OFCNCOG2CU",
   "1f0cc4b7da241f62651b85531d788fbd"
 );
@@ -68,7 +69,7 @@ export default class ExternalPluginsModal extends React.Component<Props> {
             {hit.name}
             <span className={styles.itemMeta}>v{hit.version}</span>
           </strong>
-
+Use the edit icon to pin, add or delete clips.
           <p>{hit.description}</p>
 
           <div className={styles.itemOwner}>
